@@ -3,7 +3,7 @@ class Brain {
         this.size = brainSize;
         this.step = 0;
         this.directions = [];
-        this.randomize()
+        this.randomize();
     }
 
     randomize() {
