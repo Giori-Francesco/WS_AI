@@ -39,10 +39,10 @@ class Perceptron {
 
 Perceptron.crossover = function(p1, p2) {
   const newWeights = [];
-  for (let i = 0; i < p1.length; i++) {
+  for (let i = 0; i < p1.weights.length; i++) {
     newWeights.push((random() > 0.5)? p1.getWeights()[i] : p2.getWeights()[i]);
   }
-  return mutate(new Perceptron(newWeights));
+  return new Perceptron(newWeights, (p1.mutationChance + p2.mutationChance) / 2);
 }
 
 Perceptron.mutate = function(p) {
