@@ -1,4 +1,4 @@
-const resolution = 10;
+const resolution = 20;
 let cols
 let rows
 let model;
