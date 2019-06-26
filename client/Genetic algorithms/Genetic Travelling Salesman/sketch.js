@@ -34,7 +34,6 @@ function setup() {
 
 function draw() {
     background(0);
-
     // Each round let's find the best and worst
     var minDist = Infinity;
     var maxDist = 0;
@@ -68,7 +67,6 @@ function draw() {
     line(0, 0, width, 0);
     // Show the best ever!
     bestEver.show();
-
     // Map all the fitness values between 0 and 1
     var sum = 0;
     for (var i = 0; i < population.length; i++) {

@@ -4,14 +4,14 @@ class Dot {
         this.vel = createVector();
         this.acc = createVector();
         this.brain = new Brain();
-        this.color = [0, 0, 255, 50];
+        this.color = [255, 0, 0, 75];
         this.reachedGoal = false;
         this.dead = false;
     }
 
     best() {
         this.isBest = true;
-        this.color = [0, 255, 0, 75];
+        this.color = [0, 255, 0, 100];
         return this;
     }
 
